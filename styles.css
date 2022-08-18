@@ -39,37 +39,65 @@ body {
   justify-content: space-between;
   padding: 20px 0;
 }
-.user-input-box:nth-child(2n){
-    justify-content: end;
+.user-input-box:nth-child(2n) {
+  justify-content: end;
+}
+.user-input-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  padding-bottom: 15px;
+}
+.user-input-box label {
+  width: 95%;
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 5px 0;
+}
+.user-input-box input {
+  height: 40px;
+  width: 95%;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid grey;
+  padding: 0 10px;
+}
+.gender-title {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  border-bottom: 1px solid wheat;
+}
+.gender-category {
+  margin: 15px 0;
+  color: bisque;
+}
 
+.gender-category label {
+  padding: 0 20px 0 5px;
 }
-.user-input-box{
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-    padding-bottom: 15px;
+.gender-category label,
+.gender-category input,
+.form-submit-btn input {
+  cursor: pointer;
 }
-.user-input-box label{
-    width: 95%;
-    color: aliceblue;
-    font-size: 20px;
-    font-weight: 400;
-    margin: 5px 0;
+.form-submit-btn {
+  margin-top: 40px;
 }
-.user-input-box input{
-    height: 40px;
-    width: 95%;
-    border-radius: 7px;
-    outline: none;
-    border: 1px solid grey;
-    padding: 0 10px;
+
+.form-submit-btn input {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  color: brown;
+  background: rgba(0, 0, 0, 0.4);
 }
-.gender-title{
-    color: white;
-    font-size: 24px;
-    font-weight: 600;
-    border-bottom: 1px solid wheat;
-}
-.gender-category{
-    margin: 15px o;
+.form-submit-btn input:hover {
+  color: blue;
+  background: rgba(255, 2552, 255);
 }
